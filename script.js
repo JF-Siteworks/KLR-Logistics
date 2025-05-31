@@ -26,4 +26,10 @@ window.addEventListener("DOMContentLoaded", () => {
       overlay.classList.add("hidden");
     });
   });
+
+    const contactBtn = document.querySelector(".cta-button");
+  if (contactBtn) {
+    contactBtn.classList.remove("active"); 
+    contactBtn.blur(); 
+  }
 });

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Now</title>
+  </head>
+  <body>
+    <div class="navbar-underlay"></div>
+
+    <nav class="navbar">
+      <div class="nav-content">
+        <img
+          src="images/hamburger.png"
+          class="hamburger"
+          id="hamburgerToggle"
+          alt="hamburger open"
+        />
+        <h1>KLR Logistics</h1>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="sidebar" id="mobileSidebar">
+      <button id="closeBtn" class="close-btn">x</button>
+      <a href="index.html">Home</a>
+      <a href="#">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="fade-top-no-banner"></div>
+
+    <div class="contact-text">
+      <p>
+        From here to there, and everywhere in Ireland — we’re ready when you
+        are.
+      </p>
+    </div>
+
+    <main>
+      <div class="form-wrapper">
+        <form action="contact.php" method="POST">
+          <p class="contact">Let's Work Together, Contact Me Now</p>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 JF Siteworks™. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

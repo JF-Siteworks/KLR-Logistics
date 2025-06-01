@@ -37,16 +37,18 @@
       <a href="contact.html">Contact</a>
     </div>
 
-    <div class="fade-top-no-banner"></div>
-
-    <div class="contact-text">
-      <p>
-        From here to there, and everywhere in Ireland — we’re ready when you
-        are.
-      </p>
-    </div>
+    <div id="overlay" class="overlay hidden"></div>
 
     <main>
+      <div class="fade-top-no-banner"></div>
+
+      <div class="contact-text">
+        <p>
+          From here to there, and everywhere in Ireland — we’re ready when you
+          are.
+        </p>
+      </div>
+
       <div class="form-wrapper">
         <form action="contact.php" method="POST">
           <p class="contact">Let's Work Together, Contact Me Now</p>
@@ -56,6 +58,9 @@
 
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9+\s()-]{7,}" required />
 
           <label for="message">Message:</label>
           <textarea id="message" name="message" rows="5" required></textarea>
